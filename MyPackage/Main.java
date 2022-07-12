@@ -87,7 +87,5 @@ public class Main {
         int age = 26;
         System.out.println(String.format("User info: name : %s, surname : %s, age : %d", myName, mySurname, age));
         System.out.println(String.format("Use arrays and interpolation: %s, %s, %s, This is byte number from the top: %d", stringArray[0], stringArray[1], stringArray[2], byteNumber));
-
-
     }
 }
