@@ -1,12 +1,11 @@
 package MyPackage;
 
 public class SecondTask {
-    String word;
-    String number;
-
-    public SecondTask(String word, String number) {
-        System.out.println(word.matches("[A-Z]*"));
-        System.out.println(number.matches("^\\+(380[5-9][0-9]\\d{7})$"));
+    public static Boolean validate(String text) {
+        return text.matches("[A-Z]*");
+    }
+    public static Boolean checkIt(String number) {
+        return number.matches("^\\+?380\\d{9}$");
     }
 }
 

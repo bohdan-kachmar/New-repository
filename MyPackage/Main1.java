@@ -4,6 +4,8 @@ import com.sun.jdi.Method;
 
 import static MyPackage.FirstTask.Circumference;
 import static MyPackage.FirstTask.areaOfaCircle;
+import static MyPackage.SecondTask.checkIt;
+import static MyPackage.SecondTask.validate;
 
 public class Main1 {
     public static void main(String[] args) {
@@ -18,6 +20,12 @@ public class Main1 {
         System.out.println();
 
         System.out.println("Task 2: ");
-        SecondTask homework = new SecondTask("CHECK", "+380638658521");
+        String wording = "NEW";
+        String phoneNumber = "+380638658522";
+        boolean check = validate(wording);
+        boolean check1 = checkIt(phoneNumber);
+        System.out.println("Result is : "+ check);
+        System.out.println("Result is : "+ check1);
+
     }
 }
